@@ -1,0 +1,140 @@
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Young+Serif&display=swap');
+
+/* VARIABLES */
+:root{
+    --bg-color : #222831;
+    --text-color: #fff;
+    --other-color: #212121;
+    --second-color: #0000cd;
+
+    --big-font: 3.0rem;
+    --h2-font: 2.1rem;
+    --p-font: 1rem; 
+}
+/* STYLES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+    scroll-padding-top: 3rem;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Quicksand', sans-serif;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 30px 10%;
+    transition: all .50s ease;
+}
+.hero{
+    background-image: url(./shop-img.webp);
+    background-position: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 33px;
+    font-weight: 700;
+}
+
+.logo i {
+    vertical-align: middle;
+    margin-right: 8px;
+    color: var(--second-color);
+}
+.nav__links{
+    display: flex;
+}
+
+.nav__links a{
+        color: var(--text-color);
+        font-size: var(--p-font);
+        margin: 0 30px;
+        font-weight: 600;
+        margin: 0 30px;
+        transition: all .50s ease;
+}
+.nav__links a:hover{
+    color: var(--second-color);
+}
+
+.nav_icons{
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    background: var(--second-color);
+    border-radius: 3rem;
+    box-shadow: #0000cd 0px 1px 25px;
+}
+
+.nav_icons i{
+    vertical-align: middle;
+    font-size: 25px;
+    color: var(--bg-color);
+    margin-right: 8px;
+    margin-left: 5px;
+}
+
+#menu-icon{
+    font-size: 32px;
+    color: var(--other-color);
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.nav_icons i:hover{
+    transform: scale(1.1);
+    color: var(--text-color);
+}
+.home{
+    padding: 70px 14% 60px;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1rem;
+}
+
+/* .home-img img{
+    width: 100%;
+    height: auto;
+} */
+
+.home-text h1{
+        font-size: var(--big-font);
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 3rem;
+}
+
+span{
+    color: var(--second-color);
+}
+
+header.sticky{
+    padding: 12px 14%;
+    background: var(--other-color);
+}
